@@ -1,0 +1,15 @@
+
+spring:
+  datasource:
+    url: ${DB_HOST}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_NAME}
+    password: ${DB_PASS}
+  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+    database: postgresql
